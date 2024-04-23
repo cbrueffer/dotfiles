@@ -1,0 +1,17 @@
+# modeled after https://garrit.xyz/posts/2023-10-13-organizing-multiple-git-identities
+
+[user]
+    email = christian@brueffer.io
+    name = Christian Brueffer
+
+[includeIf "gitdir:~/repos/insilico/"]
+    path = ~/.gitconfig-insilico
+
+[includeIf "gitdir:~/repos/freebsd/"]
+    path = ~/.gitconfig-freebsd
+
+[includeIf "gitdir:~/repos/lu/"]
+    path = ~/.gitconfig-lu
+
+[core]
+    editor = vim
